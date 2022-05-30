@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANDA</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(229, 240, 229);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+
+        }
+
+        #head {
+            color: rgb(12, 12, 11);
+        }
+
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+            /* only for demonstration, should be removed */
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the heder */
+        footer {
+            background-color: rgb(238, 236, 226);
+            padding: 10px;
+            text-align: center;
+            color: rgb(247, 243, 233);
+        }
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        #pera {
+            background-color: white;
+        }
+    </style>
+    </head>
+
+    <body>
+        <p>There are only two different panda species in the world, the giant pandas and the red pandas.</p>
+
+        <header>
+            <h2 id="head">PANDA</h2>
+        </header>
+
+        <section>
+
+            <article id="pera">
+                <h1>The giant panda , also known as the
+                    panda bear , is a bear species endemic to China. It is characterised by its
+                    bold black-and-white coat and rotund body. The name "giant panda" is sometimes used to distinguish
+                    it from the red panda, a neighboring musteloid. Though it belongs to the order Carnivora, the giant
+                    panda is a folivore, with bamboo shoots and leaves making up more than 99% of its diet.[5] Giant
+                    pandas in the wild will occasionally eat other grasses, wild tubers, or even meat in the form of
+                    birds, rodents, or carrion. In captivity, they may receive honey, eggs, fish, yams, shrub leaves,
+                    oranges, or bananas along with specially prepared food.</h1>
+                <img=src"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQHTfZCbvEA2pc-8aTie6cUW413_Phb8oDkQ&usqp=CAU">    
+                <p>Why are they called giant pandas?
+                    The red panda was first classified and given its scientific name, Ailurus fulgens, in 1825. Giant pandas were described much later and earned their "
+                    panda" name because of the similarities the two species shared, like eating bamboo.</p>
+                <img
+                    src="data:image/jpeg;base64,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"></img>
+                    
+
+                <p>Why are pandas cute?
+                    They remind us of babies especially with their big eyes (the eyes are not that particularly big but
+                    the black patches around their eyes make them appear larger) round faces, snub noses and large heads
+                    (a large head and tiny body is much cuter than a tiny head and large body (like rats).</p>
+                <h2>THE RED PANDAS</h2>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPMI0_yW-SmWILMf0Q7sq__TclIejzMrkAg&usqp=CAU"></img>
+                <p>Red pandas are made up of two subspecies�the Himalayan red panda (Ailurus fulgens fulgens), which
+                    resides in the mountains of northern India, Tibet, Bhutan, and Nepal, and the Chinese red panda (A.
+                    fulgens styani), which lives in China's Sichuan and Yunnan provinces.</p>
+                <p>What is the classification of Lion?
+                    The lion is one of five pantherine cats native to India, along with the Bengal tiger ( P. tigris
+                    tigris ), Indian leopard ( P. pardus fusca ), snow leopard ( P. uncia) and clouded leopard (
+                    Neofelis nebulosa ). It was also known as the Indian lion and the Persian lion.</p>
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtI2y38V2Q9RJ--FdusgXuwgU0s4hG5q4NEA&usqp=CAU">
+                <p>Is a red panda a bear or marsupial?
+                    Red pandas are not marsupials since they are placental mammals. Marsupials are animals that give
+                    birth to extremely under-developed young which then crawl to the mother's pouch where they will
+                    fully develop. Placental mammals are born fully developed. A baby red panda is born completely
+                    covered in fur.</p>
+                <p>Do pandas have 5 hearts?
+                    How many hearts does a panda have? Its expression is the same as its nature. Weak � They only have
+                    10 health (5 hearts) and tend to sneeze more often as babies than adult pandas.</p>
+                <p>Do pandas lay eggs?
+                    Female giant pandas give birth from 90 to 180 days after mating. Although females may give birth to
+                    two young, usually only one survives. Giant panda cubs may stay with their mothers for up to three
+                    years before striking out on their own.</p>
+                <img
+                    SRC="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBbaRBzgYYQz6KtokkEoHlphRZD8TWkMkw9w&usqp=CAU">
+            </article>
+        </section>
+
+    </body>
+
+</html>
+
+
+</body>
+
+</html>
+
+</body>
+
+</html>
